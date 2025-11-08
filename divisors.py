@@ -9,10 +9,9 @@ def divisors(n: int):
             small.append(d)
             if d != n // d:
                 large.append(n // d)
-    return small + large[::-1]  # 오름차순
-
+    return small + large[::-1]  
 def main():
-    n = int(sys.argv[1])  # autograding이 인자로 줌 (예: 100, 23)
+    n = int(sys.argv[1]) 
     print(" ".join(map(str, divisors(n))))
 
 if __name__ == "__main__":
